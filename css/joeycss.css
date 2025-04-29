@@ -15,28 +15,7 @@
     box-sizing: border-box;
     font-family: var(--league, sans-serif);
 }
-button.icon{
-    background-image: url(iconVert.svg);
-}
-.face{
-    background-image: url(iconface.svg);
-}
-.insta{
-    background-image: url(iconInsta.svg);
 
-}
-.red{
-    background-image: url(iconRed.svg);
-}
-button{
-    fill: var(--vert);
-    box-shadow: -4px -4px 8px 0px rgba(65, 93, 43, 0.54) inset;
-    filter: drop-shadow(4px 4px 8px rgba(65, 93, 43, 0.90));
-    border-radius: 62%;
-}
-.navbar{
-    background-image: url(navbar.svg);
-}
 body {
     color: #333;
     background-color: #f9f9f9;
