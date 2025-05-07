@@ -1,4 +1,4 @@
-
+/*variables couleurs*/
 :root {
     --beige: rgba(234, 225, 206, 1);
     --vert: rgba(146, 166, 97, 1);
@@ -7,7 +7,15 @@
     --league: 'League Gothic', sans-serif;
 
 }
-/*generaux*/
+
+/*media queries desktop*/
+
+/*barre navigation*/
+
+/*footer*/
+
+
+/*mise en page generale*/
 
 * {
     margin: 0;
@@ -49,3 +57,7 @@ img {
     height: auto;
 }
 /*section hero*/
+
+/*
+
+
