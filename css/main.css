@@ -11,9 +11,30 @@
 /*media queries desktop*/
 
 /*barre navigation*/
-
+.navbar {
+    background-color: var(--vertFonce);
+    border-radius: 9999px;
+     margin-left: 10vw;
+     margin-right: 10vw;
+     margin-top: 0.5vh;
+     margin-bottom: 0.5vh;
+     padding: 2vh;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     min-height: 50px;
+     background-position: center;
+ }
+ nav{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+ }
 /*footer*/
-
+footer{
+    width: 100%;
+}
 
 /*mise en page generale*/
 
@@ -56,30 +77,8 @@ img {
     max-width: 100%;
     height: auto;
 }
-footer{
-    width: 100%;
-    ;
-}
-.navbar {
-   background-color: var(--vertFonce);
-   border-radius: 9999px;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-top: 0.5vh;
-    margin-bottom: 0.5vh;
-    padding: 2vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    min-height: 50px;
-    background-position: center;
-}
-nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+
+
 h2{
     font-size: 1rem;
     height: 5%;
@@ -87,6 +86,6 @@ h2{
 
 /*section hero*/
 
-/*
+/*mettre texte alternatif, id change to class, evite balise button, juste mettre hover sur qu'ext-ce qui est accessible
 
 
