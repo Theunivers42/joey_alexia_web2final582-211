@@ -1,64 +1,38 @@
 
 :root {
-    --beige: rgba(234, 225, 206, 1);
-    --vert: rgba(146, 166, 97, 1);
-    --vertFonce: rgba(62, 99, 41, 1);
-    --brun: rgba(175, 123, 47, 1);
+    --beige:#EAE1CE;;
+    --vertPale: #CEE0BC;
+    --vert: #92A661;
+    --vertFonce: #3E6329;
+    --brun: #AF7B2F;
     --league: 'League Gothic', sans-serif;
 
 }
-/*generaux*/
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--league, sans-serif);
-}
-
-body {
-    color: #333;
-    background-color: #f9f9f9;
+/*mots de bienvenue*/
+.bienvenue{
+    color: #000;
+    font-family: "League Gothic";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.32px;
 }
 
-a:hover {
-    text-decoration: underline;
+.message{
+ color:var(--vertFonce);
+ text-align: justify;
+ font-family: "League Gothic";
+ font-size: 48px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+ letter-spacing: 2.88px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.center{
+    display: block;
+    border-radius: 50px;
+    background-image: radial-gradient(var(--vertFonce), var(--vert));
 }
-/*section hero*/
-
-footer{
-    width: 100%;
-    ;
-}
-.navbar {
-   background-color: var(--vertFonce);
-   border-radius: 9999px;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-top: 0.5vh;
-    margin-bottom: 0.5vh;
-    padding: 2vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    min-height: 50px;
-    background-position: center;
-}
-nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-h2{
-    font-size: 1rem;
-    height: 5%;
-}
-
-/*section hero*/
-

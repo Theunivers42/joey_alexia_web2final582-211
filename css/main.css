@@ -1,14 +1,13 @@
 /*variables couleurs*/
 :root {
-    --beige: rgba(234, 225, 206, 1);
-    --vert: rgba(146, 166, 97, 1);
-    --vertFonce: rgba(62, 99, 41, 1);
-    --brun: rgba(175, 123, 47, 1);
+    --beige:#EAE1CE;;
+    --vertPale: #CEE0BC;
+    --vert: #92A661;
+    --vertFonce: #3E6329;
+    --brun: #AF7B2F;
     --league: 'League Gothic', sans-serif;
 
 }
-
-/*media queries desktop*/
 
 /*barre navigation*/
 .navbar {
@@ -31,13 +30,21 @@
      flex-direction: row;
      align-items: center;
  }
+
+ a{
+    display:block;
+    border-radius: 50px;
+    background: var(--vertPale);
+    padding: 15px;
+    
+ }
+
 /*footer*/
 footer{
     width: 100%;
 }
 
-/*mise en page generale*/
-
+/* body mise en page generale*/
 * {
     margin: 0;
     padding: 0;
@@ -65,8 +72,11 @@ button{
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: var(--beige);
 }
 
 a:hover {
@@ -86,6 +96,16 @@ h2{
 
 /*section hero*/
 
-/*mettre texte alternatif, id change to class, evite balise button, juste mettre hover sur qu'ext-ce qui est accessible
+/*mettre texte alternatif, id change to class, evite balise button, juste mettre hover sur qu'ext-ce qui est accessible*/
+
+
+/*media queries desktop*/
+@media screen and (min-width: 700px) {
+    body 
+    {background-image: radial-gradient(var(--brun), var(--beige));
+     background-repeat: no-repeat;
+    }
+  }
+
 
 
