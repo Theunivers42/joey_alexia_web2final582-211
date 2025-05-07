@@ -34,9 +34,7 @@ button{
     filter: drop-shadow(4px 4px 8px rgba(65, 93, 43, 0.90));
     border-radius: 62%;
 }
-.navbar{
-    background-image: url(navbar.svg);
-}
+
 body {
     color: #333;
     background-color: #f9f9f9;

@@ -15,10 +15,7 @@
     box-sizing: border-box;
     font-family: var(--league, sans-serif);
 }
-button{
-    background-color: var(--vertFonce);
-    box-shadow: ;
-}
+
 body {
     color: #333;
     background-color: #f9f9f9;
