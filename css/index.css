@@ -23,25 +23,20 @@ body {
     height:100vh;
     /*changement background color mobile pour permettre degrader retrouver dans desktop*/
     background-image: linear-gradient(var(--beige), var(--brun));
+    background-repeat: no-repeat;
 }
 
 .mainLogo {
-    display: row;
-    justify-content: center;
+    display:flex;
     align-items: center;
-    color: #fff;
     max-height:50px;
     width: 100%;
-}
-span {
-     display: row;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+
+    color: #fff;
+    font-weight: 400;
 }
 
-.mainLogo h1 {
-    width: ;
-}
  
 .navbar {
     background-color: var(--vertFonce);
@@ -49,14 +44,90 @@ span {
     width:95%;
     height:50px;
     min-height:50px;
-   
     padding :10px;
-
-
-    flex-shrink: 0;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    
+
  }
+
+.navbar a{
+    display:block;
+    border-radius: 50px;
+    background: var(--vertPale);
+    padding: 5px;
+
+ }
+
+h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    color:var(--vertFonce);
+ }
+
+ .comJour {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+ }
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ 
+.options img {
+    width:2em;
+    height:2em;
+}
+
+ #archideckt {
+    background-color: #FF7357;
+    border-radius: 100%;
+    max-width:80px;
+    width:45px;
+    height: 45px;
+    padding:10px;
+    margin: 10px;  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#moxfield {
+    background-color:#A07BFF;
+    border-radius: 100%;
+    max-width:80px;
+    width:45px;
+    height: 45px;
+    padding:10px;
+    margin: 10px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scryfall{
+    background-color:#60516F;
+    border-radius: 100%;
+    max-width:80px;
+    width:45px;
+    height: 45px;
+    padding:10px;
+    margin: 10px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*background va etre centrer au centre de la page pour aligner le contenu et bonifier experience utilisateur*/
+.enVedette{
+    background-color: var(--vert);
+    border-radius:60px;
+    color: var(--vertFonce);
+    text-transform: uppercase;
+    padding: 1px;
+
+}
