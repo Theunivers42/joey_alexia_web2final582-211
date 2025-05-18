@@ -5,26 +5,12 @@
     --vert: #92A661;
     --vertFonce: #3E6329;
     --brun: #AF7B2F;
-    --league: 'League Gothic', sans-serif;
+    
 
 }
 
 /*barre navigation*/
-.navbar {
-    background-color: var(--vertFonce);
-    border-radius: 9999px;
-     margin-left: 10vw;
-     margin-right: 10vw;
-     margin-top: 0.5vh;
-     margin-bottom: 0.5vh;
-     padding: 2vh;
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     justify-content: center;
-     min-height: 50px;
-     background-position: center;
- }
+
  nav{
      display: flex;
      flex-direction: row;

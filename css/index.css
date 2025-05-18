@@ -1,0 +1,62 @@
+/*variables couleurs*/
+:root {
+    --beige:#EAE1CE;;
+    --vertPale: #CEE0BC;
+    --vert: #92A661;
+    --vertFonce: #3E6329;
+    --brun: #AF7B2F;
+    --league: 'League Gothic', sans-serif;
+
+}
+
+
+/* body mise en page generale*/
+* {
+    box-sizing: border-box;
+    font-family: var(--league, sans-serif);
+}
+
+
+body {
+    padding:15px, 10px;
+    width:100vw;
+    height:100vh;
+    /*changement background color mobile pour permettre degrader retrouver dans desktop*/
+    background-image: linear-gradient(var(--beige), var(--brun));
+}
+
+.mainLogo {
+    display: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    max-height:50px;
+    width: 100%;
+}
+span {
+     display: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainLogo h1 {
+    width: ;
+}
+ 
+.navbar {
+    background-color: var(--vertFonce);
+    border-radius:60px;
+    width:95%;
+    height:50px;
+    min-height:50px;
+   
+    padding :10px;
+
+
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+ }

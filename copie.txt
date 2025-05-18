@@ -1,0 +1,14 @@
+                
+NAV BARRE PAGE DESKTOP
+                <!--carte-->
+                <a href=""> <img src="/assets/cards logo.png" alt="cartes"> </a> 
+                <!--commandant-->
+                <a href="commandant.html"> <img src="/assets/logo_commander.png" alt="commandant"> </a>
+                <!--article-->
+                <a href="article.html"><img src="/assets/logo_newsletter.png" alt="articles"></a>
+                <!--menu-->
+                <a href=""><img src="/assets/menu.png"alt="menu"></a>
+                <!--recherche-->
+                <a href=""><img src="/assets/logo_recherche.png"alt="recherche"></a>
+                <!--contact-->
+                <a href="connection.html"> <img src="/assets/logo_contact.png"alt="contact"></a>
