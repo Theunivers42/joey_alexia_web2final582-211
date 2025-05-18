@@ -33,8 +33,8 @@ footer{
 /* body mise en page generale*/
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    /*padding: 0;
+    box-sizing: border-box;* AVOIR SI GARDER OU PAS*/
     font-family: var(--league, sans-serif);
 }
 button.icon{
@@ -83,15 +83,6 @@ h2{
 /*section hero*/
 
 /*mettre texte alternatif, id change to class, evite balise button, juste mettre hover sur qu'ext-ce qui est accessible*/
-
-
-/*media queries desktop*/
-@media screen and (min-width: 700px) {
-    body 
-    {background-image: radial-gradient(var(--brun), var(--beige));
-     background-repeat: no-repeat;
-    }
-  }
 
 
 

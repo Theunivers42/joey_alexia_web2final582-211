@@ -24,7 +24,7 @@ body {
     background-image: linear-gradient(var(--beige), var(--brun));
     background-repeat: no-repeat;
     background-position: center;
-    padding:15px, 10px;
+    /*padding:15px, 10px; A VOIR */
 }
 
 .mainLogo {
@@ -69,7 +69,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-content: center;
-    max-width: fit-content;
  }
 
  li {
@@ -146,10 +145,10 @@ h2 {
 .container{
     background-color: var(--vert);
     border-radius:60px;
-    width:90%;
+    width:100%;
     color: var(--vertFonce);
     text-transform: uppercase;
-    padding: 10px;
+    padding:10px;
     margin:10px;
     display:inline-flex;
     justify-content:space-evenly;

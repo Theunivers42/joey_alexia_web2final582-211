@@ -8,44 +8,53 @@
     <!--police et css page-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
+    <!--<link rel="stylesheet" href="css/index.css">-->
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
     <!--Voici le header de la page-->
     <header>
-        <!--Voici la navigation de la page-->
         <nav>
-            <!--Voici la barre de navigation = fond vert fonce-->
-            <div class="navbar">
-               
-               <div class="nav-links">
-
-               </div>
-                <!--svg main logo-->
-                <div class="mainLogo">
-                    <img src="/assets/svg/mainLogo.svg" alt="logo">
-                    <h1>EDHERC</h1>
-                </div>
+            <!--voici la barre de nav sidebar, disponible aussi pour format mobile-->
+            <ul class="sidebar"> 
+                <!--accueil-->
+                <li onclick=hideSidebar()><a><img src="/assets/svg/close_blanc.svg"alt="fermer"></a></li>
                 <!--carte-->
-                <a href=""><img src="/assets/svg/carteLogo.svg"alt="carte"></a>
+                <li><a href="">cartes</a></li>
                 <!--commandant-->
-                <a href=""><img src="/assets/svg/menu.svg"alt="commandant"></a>
+                <li><a href="">commandant</a></li>
                 <!--article-->
-                <a href=""><img src="/assets/svg/nouvelles.svg"alt="nouvelles"></a>
-                <!--menu-->
-                <a href=""><img src="/assets/svg/menu.svg"alt="menu"></a>
+                <li><a href="">nouvelles</a></li>
+            </ul>
+
+        <!--voici la barre de nav en haut, qui disparait en mobile-->
+            <ul> 
+                <!--accueil-->
+                <li class="mainLogo"><a href=""><img src="/assets/svg/mainLogo.svg" alt="logo"><h1>EDHERC</h1></a></li>
+                <!--carte-->
+                <li class="hideOnMobile"><a href="">cartes</a></li>
+                <!--commandant-->
+                <li class="hideOnMobile"><a href="">commandant</a></li>
+                <!--article-->
+                <li class="hideOnMobile"><a href="">nouvelles</a></li>
                 <!--recherche-->
-                <a href=""><img src="/assets/svg/menu.svg"alt="recherche"></a>
+                <li><a href=""><img src="/assets/svg/search_blanc.svg"alt="recherche"></a></li>
                 <!--contact-->
-                <a href=""><img src="/assets/svg/menu.svg"alt="contact"></a>
-            </div>
+                <li><a href=""><img src="/assets/svg/contact_blanc.svg"alt="contact"></a></li>
+                <!--menu-->
+                <li onclick=showSidebar()><a><img src="/assets/svg/menu_blanc.svg"alt="menu"></a></li>
+            </ul>
         </nav>
     </header>
+
+<!----------------------------------------------------------------------->
+
     <main>
         <!--mot de bienvenue-->
         <div class="bienvenue"> 
             <h2>Bienvenue!</h2>
+            <p class="hideOnMobile">Découvrez l'essence du Commander avec EDHREC — votre ressource incontournable pour créer de meilleurs decks. Que vous construisiez votre tout premier deck Commander ou que vous peaufiniez votre centième, EDHREC collecte des données de milliers de decks pour vous montrer les cartes les plus populaires, les synergies et les stratégies autour de vos commandants préférés. Plongez, inspirez-vous et améliorez votre prochain build !</p>
         </div>
         <!---section commandant du jour dans version desktop-->
         <div class="comamandantJ">
@@ -67,44 +76,64 @@
             <!--commandant de la semaine-->
                     <div class="topCommanders">
                         <h2>commanders</h2>
-                            <li><a href="">Teval, the Balanced Scale</a></li>
-                            <li><a href="">The Ur-Dragon</a></li>
-                            <li><a href="">Deadpool, Trading Cards</a></li>
-                            <li><a href="">Zurgo Stormrender</a></li>
-                            <li><a href="">Ureni of the Unwritten</a></li>
+                        <ul>
+                            <li class="commanders"><a href="">Teval, the Balanced Scale</a></li>
+                            <li class="commanders"><a href="">The Ur-Dragon</a></li>
+                            <li class="commanders"><a href="">Deadpool, Trading Cards</a></li>
+                            <li class="commanders"><a href="">Zurgo Stormrender</a></li>
+                            <li class="commanders"><a href="">Ureni of the Unwritten</a></li>
+                        </ul>
                     </div>
                     <!--cartes populaires de la semaine-->
                     <div class="topCard">
                         <h2>cartes</h2>
-                        <li><a href="">Call the Spirit Dragons</a></li>
-                        <li><a href="">Mardu Siegebreaker</a></li>
-                        <li><a href="">Temur Battlecrier</a></li>
-                        <li><a href="">Ureni of the Unwritten</a></li>
-                        <li><a href="">Kheru Goldkeeper</a></li>
+                        <ul>
+                            <li><a href="">Call the Spirit Dragons</a></li>
+                            <li><a href="">Mardu Siegebreaker</a></li>
+                            <li><a href="">Temur Battlecrier</a></li>
+                            <li><a href="">Ureni of the Unwritten</a></li>
+                            <li><a href="">Kheru Goldkeeper</a></li>  
+                        </ul>
+                        
                     </div>
                 </div>
         <div class="container">
             <img src="">
     
         </div>
+        
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+         function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
     </main>
-    
+
+<!----------------------------------------------------------------------->
 
     <footer>
-        <div class="navbar">
             <nav>
-                <!--svg main logo-->
-                <div class="mainLogo">
+                <ul>
+                    <!--svg main logo-->
+                    <li class="mainLogo">
                     <img src="/assets/svg/mainLogo.svg" alt="logo">
-                </div>
-                <!--facebook-->
-                <a href=""><img src="/assets/svg/facebook.svg"alt="facebook"></a>
-                <!--instagram-->
-                <a href=""><img src="/assets/svg/insta.svg"alt="insta"></a>
-                <!--reddit-->
-                <a href=""><img src="/assets/svg/reddit.svg"alt="reddit"></a>
+                    <h1>EDHERC</h1>
+                    </li>
+                    <!--facebook-->
+                    <li><a href=""><img src="/assets/svg/facebook.svg"alt="facebook"></a></li>
+                    <!--instagram-->
+                    <li><a href=""><img src="/assets/svg/insta.svg"alt="insta"></a></li>
+                    <!--reddit-->
+                    <li><a href=""><img src="/assets/svg/reddit.svg"alt="reddit"></a></li>
+                </ul>
+                
             </nav>
-        </div>
     </footer>
 </body>
 </html>
