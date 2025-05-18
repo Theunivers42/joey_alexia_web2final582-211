@@ -29,12 +29,13 @@ body {
 .mainLogo {
     display:flex;
     align-items: center;
+    object-fit: cover;
     max-height:50px;
     width: 100%;
     height: 100%;
-
     color: #fff;
-    font-weight: 400;
+    font-weight: 300;
+    font-size:2em;
 }
 
  
@@ -45,15 +46,14 @@ body {
     height:50px;
     min-height:50px;
     padding :10px;
-    display: flex;
+    display:flex;
 
  }
 
 .navbar a{
-    display:block;
-    border-radius: 50px;
     background: var(--vertPale);
     padding: 5px;
+    border-radius:60px;
 
  }
 
@@ -61,13 +61,22 @@ h2 {
     text-transform: uppercase;
     font-size: 2em;
     color:var(--vertFonce);
+    margin:10px;
  }
 
- ul {
+ .contenu {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: fit-content;
+ }
+
+ li {
     text-transform: capitalize;
     color: #fff;
     font-size: 1.2rem;
     margin:10px;
+    text-decoration: none;
  }
 
  .comJour {
@@ -78,13 +87,16 @@ h2 {
     padding: 10px;
  }
 
-.options {
+.button {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 50px;
+    
+
 }
  
-.options img {
+.button img {
     width:2em;
     height:2em;
 }
@@ -130,11 +142,15 @@ h2 {
 
 
 /*background va etre centrer au centre de la page pour aligner le contenu et bonifier experience utilisateur*/
-.enVedette{
+.container{
     background-color: var(--vert);
     border-radius:60px;
+    width:90%;
     color: var(--vertFonce);
     text-transform: uppercase;
-    padding: 1px;
-
+    padding: 10px;
+    margin:10px;
+    display:inline-flex;
+    justify-content:space-evenly;
+    align-items: center;
 }

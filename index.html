@@ -11,16 +11,33 @@
     <link rel="stylesheet" href="css/index.css"><link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
+    <!--Voici le header de la page-->
     <header>
+        <!--Voici la navigation de la page-->
         <nav>
+            <!--Voici la barre de navigation = fond vert fonce-->
             <div class="navbar">
+               
+               <div class="nav-links">
+                
+               </div>
                 <!--svg main logo-->
                 <span class="mainLogo">
                     <img src="/assets/svg/mainLogo.svg" alt="logo">
                     <h1>EDHERC</h1>
                 </span>
+                <!--carte-->
+                <a href=""><img src="/assets/svg/carteLogo.svg"alt="carte"></a>
+                <!--commandant-->
+                <a href=""><img src="/assets/svg/menu.svg"alt="commandant"></a>
+                <!--article-->
+                <a href=""><img src="/assets/svg/nouvelles.svg"alt="nouvelles"></a>
                 <!--menu-->
                 <a href=""><img src="/assets/svg/menu.svg"alt="menu"></a>
+                <!--recherche-->
+                <a href=""><img src="/assets/svg/menu.svg"alt="recherche"></a>
+                <!--contact-->
+                <a href=""><img src="/assets/svg/menu.svg"alt="contact"></a>
             </div>
         </nav>
     </header>
@@ -30,42 +47,45 @@
             <h2>Bienvenue!</h2>
         </div>
         <!---section commandant du jour dans version desktop-->
-        <div class="comJour">
-            <img src="/assets/image/commanderCard.jpg" alt="commanderCard">
-            <div class="options">
-                <a id="archideckt" href=""><img src="/assets/svg/archideckt.svg"alt="archideckt"></a>
-                <a id="moxfield" href=""><img src="/assets/svg/moxfield.svg"alt="moxfield"></a>
-                <a id="scryfall" href=""><img src="/assets/svg/scryfall.svg"alt="scryfall"></a>
-            </div>
+        <div class="comamandantJ">
+            <h2>Commandant du jour</h2> 
+             <div class="contenu">
+                <img src="/assets/image/commanderCard.jpg" alt="commanderCard">
+                <div class="button">
+                    <a id="archideckt" href=""><img src="/assets/svg/archideckt.svg"alt="archideckt"></a>
+                    <a id="moxfield" href=""><img src="/assets/svg/moxfield.svg"alt="moxfield"></a>
+                    <a id="scryfall" href=""><img src="/assets/svg/scryfall.svg"alt="scryfall"></a>
+                </div>
+            </div>   
         </div>
+       
+    
         <!---initialement appele cartes populaires sur version mobile, mais changer pour en vedette cette semaine; raison; eviter la confusion-->
-        <div class="enVedette">
             <h2>Cartes populaires</h2>
+                <div class="container">
             <!--commandant de la semaine-->
-            <div class="comSem">
-                <h2>commanders</h2>
-                <ul>Teval, the Balanced Scale</ul>
-                <ul>The Ur-Dragon</ul>
-                <ul>Deadpool, Trading Card</ul>
-                <ul>Zurgo Stormrender</ul>
-                <ul>Ureni of the Unwritten</ul>
-            </div>
-            <!--cartes populaires de la semaine-->
-            <div class="cartes">
-                <h2>cartes</h2>
-                <ul>Call the Spirit Dragons</ul>
-                <ul>Mardu Siegebreaker</ul>
-                <ul>Temur Battlecrier</ul>
-                <ul>Ureni of the Unwritten</ul>
-                <ul>Kheru Goldkeeper</ul>
-            </div>
-            
-        </div>
-        <div class="nouvelles">
+                    <div class="topCommanders">
+                        <h2>commanders</h2>
+                            <li><a href="">Teval, the Balanced Scale</a></li>
+                            <li><a href="">The Ur-Dragon</a></li>
+                            <li><a href="">Deadpool, Trading Cards</a></li>
+                            <li><a href="">Zurgo Stormrender</a></li>
+                            <li><a href="">Ureni of the Unwritten</a></li>
+                    </div>
+                    <!--cartes populaires de la semaine-->
+                    <div class="topCard">
+                        <h2>cartes</h2>
+                        <li><a href="">Call the Spirit Dragons</a></li>
+                        <li><a href="">Mardu Siegebreaker</a></li>
+                        <li><a href="">Temur Battlecrier</a></li>
+                        <li><a href="">Ureni of the Unwritten</a></li>
+                        <li><a href="">Kheru Goldkeeper</a></li>
+                    </div>
+                </div>
+        <div class="container">
             <img src="">
-            <p></p>
+    
         </div>
-
     </main>
     
 
