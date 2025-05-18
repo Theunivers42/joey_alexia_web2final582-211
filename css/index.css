@@ -18,12 +18,13 @@
 
 
 body {
-    padding:15px, 10px;
-    width:100vw;
-    height:100vh;
+    min-width:100vw;
+    min-height:100vh;
     /*changement background color mobile pour permettre degrader retrouver dans desktop*/
     background-image: linear-gradient(var(--beige), var(--brun));
     background-repeat: no-repeat;
+    background-position: center;
+    padding:15px, 10px;
 }
 
 .mainLogo {
