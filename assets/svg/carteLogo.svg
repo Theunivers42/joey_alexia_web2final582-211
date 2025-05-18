@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="46" viewBox="0 0 52 46" fill="none">
+  <mask id="path-1-inside-1_67_675" fill="white">
+    <rect x="30.059" y="0.75" width="22.3751" height="39.1565" rx="1" transform="rotate(18.411 30.059 0.75)"/>
+  </mask>
+  <rect x="30.059" y="0.75" width="22.3751" height="39.1565" rx="1" transform="rotate(18.411 30.059 0.75)" fill="#CEE0BC" stroke="#3E6329" stroke-width="4" mask="url(#path-1-inside-1_67_675)"/>
+  <mask id="path-2-inside-2_67_675" fill="white">
+    <rect x="19.5177" y="0.75" width="22.3751" height="39.1565" rx="1" transform="rotate(6.77953 19.5177 0.75)"/>
+  </mask>
+  <rect x="19.5177" y="0.75" width="22.3751" height="39.1565" rx="1" transform="rotate(6.77953 19.5177 0.75)" fill="#CEE0BC" stroke="#3E6329" stroke-width="4" mask="url(#path-2-inside-2_67_675)"/>
+  <mask id="path-3-inside-3_67_675" fill="white">
+    <rect x="9.30151" y="4.48999" width="22.3751" height="39.1565" rx="1" transform="rotate(-9.62223 9.30151 4.48999)"/>
+  </mask>
+  <rect x="9.30151" y="4.48999" width="22.3751" height="39.1565" rx="1" transform="rotate(-9.62223 9.30151 4.48999)" fill="#CEE0BC" stroke="#3E6329" stroke-width="6" mask="url(#path-3-inside-3_67_675)"/>
+  <mask id="path-4-inside-4_67_675" fill="white">
+    <rect x="0.910767" y="10.1562" width="22.3751" height="39.1565" rx="1" transform="rotate(-24.859 0.910767 10.1562)"/>
+  </mask>
+  <rect x="0.910767" y="10.1562" width="22.3751" height="39.1565" rx="1" transform="rotate(-24.859 0.910767 10.1562)" fill="#CEE0BC" stroke="#3E6329" stroke-width="4" mask="url(#path-4-inside-4_67_675)"/>
+</svg>

@@ -1,0 +1,136 @@
+:root {
+    --beige:#EAE1CE;;
+    --vertPale: #CEE0BC;
+    --vert: #92A661;
+    --vertFonce: #3E6329;
+    --brun: #AF7B2F;
+    --league: 'League Gothic', sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width:100vw;
+    min-height:100vh;
+    flex-grow:1;
+    /*changement background color mobile pour permettre degrader retrouver dans desktop*/
+    background-image: linear-gradient(var(--beige), var(--brun));
+    background-repeat: no-repeat;
+    background-position: center;
+    /*overflow-x: hidden;*/
+    padding-bottom:100px;
+    font-family: var(--league, sans-serif);
+}
+
+.mainLogo {
+    display:flex;
+    align-items: center;
+    max-height:50px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-weight: 300;
+    font-size:2em;
+}
+
+nav{
+    background-color: var(--vertFonce);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+/*barre nav en haut*/
+nav ul{
+    width: 100%;
+    list-style-type:none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height:50px;
+}
+
+nav a{
+    height: 100%;
+    padding :0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color:#ffffff;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    background-color: var(--vertPale);
+    color:var(--vertFonce);
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+/*barre nav deroulant*/
+.sidebar{
+    position: fixed;
+    top:0;
+    right:0;
+    height: 100vh;
+    width: 250px;
+    z-index:999;
+    background-color: rgba(2, 88, 21, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1) ;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width:100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    color:var(--vertFonce);
+    margin:10px;
+ }
+
+.container li {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 1.2rem;
+    margin:10px;
+    text-decoration: none;
+ }
+
+footer {
+    background-color: var(--vertFonce);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    position: relative;
+}
+
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display:none;
+    }
+}
+
+@media(max-width:400px){
+    .sidebar{
+        width:100%;
+    }
+}
