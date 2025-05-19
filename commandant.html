@@ -13,25 +13,56 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
-        <img src="">
         <nav>
-            
-                <a href="" id="carte"><button id="icon"></button></a>
-                <a href="" id="commandant"><button id="icon"></button></a>
-                <a href="" id="article"><button id="icon"></button></a>
-                <a href="" id="menu"><button id="icon"></button></a>
-        
-        </div>
+            <!--voici la barre de nav sidebar, disponible aussi pour format mobile-->
+            <ul class="sidebar"> 
+                <!--x qui permet de fermer la navigation de cote lorsqu'on clique dessus (javascript inclus dans html voir plus bas)-->
+                <li onclick=hideSidebar()><a><img src="/assets/svg/close_blanc.svg"alt="fermer"></a></li>
+                <!--onglet cartes sidebar-->
+                <li><a href="">cartes</a></li>
+                <!--onglet commandant sidebar-->
+                <li><a href="commandant.html">commandant</a></li>
+                <!--onglet nouvelle sidebar-->
+                <li><a href="article.html">nouvelles</a></li>
+            </ul>
+
+        <!--voici la barre de nav en haut, qui disparait en mobile-->
+            <ul> 
+                <!--accueil, logo qui permet de retourner a la page accueil lorsqu'on clique dessus, visible sur mobile-->
+                <!--<li class="mainLogo"><a href=""><img src="/assets/svg/mainLogo.svg" alt="logo"><h1>EDHERC</h1></a></li>-->
+                <li><a href="index.html" class="logo"><img src="/assets/svg/mainLogo.svg" alt="logo">EDHERC</a></li>
+                <!--onglet carte nav en haut-->
+                <li class="hideOnMobile"><a href="">cartes</a></li>
+                <!--onglet commandant nav en haut-->
+                <li class="hideOnMobile"><a href="commandant.html">commandant</a></li>
+                <!--onglet nouvelles nav en haut-->
+                <li class="hideOnMobile"><a href="article.html">nouvelles</a></li>
+                <!--bouton de pour barre de recherche, pas accesible, disponible en mobile-->
+                <li><a href="#"><img src="/assets/svg/search_blanc.svg"alt="recherche"></a></li>
+                <!--onglet contact qui mene a la page de contact, disponible en mobile-->
+                <li><a href="connection.html"><img src="/assets/svg/contact_blanc.svg"alt="contact"></a></li>
+                <!--qui permet d'ouvrir le menu de nav sur le coté, disponible en mobile-->
+                <li onclick=showSidebar()><a><img src="/assets/svg/menu_blanc.svg"alt="menu"></a></li>
+            </ul>
+        </nav>
     </header>
+    <main>
+         <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+         function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    </main>
     <div class="centre">
         <div class="carte">
-            <img src="" class="carte commandant mobile">
-            <nav class="nav commandant">
-            <button class="icone"></button>
-            <button class="icone"></button>
-            <button class="icone"></button>
-        </nav>
+            <img src="assets\image\commanderCard.jpg" class="carte commandant mobile">
+           
         </div>
         <div class="populaire">
             <div class="populaire commanders">
@@ -46,16 +77,126 @@
 
         </div>
     </div>
-    <footer>
-        <div class="navbar">
-            <img src="" class="footerlogo">
-            <h2>Alexia Chher - Olivier Laliberté - Joey Bourgeois 2025</h2>
+    <div class="tableau">
+        <ul class="carte">
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+        </ul>
+          <ul class="carte">
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+        </ul>
+          <ul class="carte">
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+        </ul>
+          <ul class="carte">
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+           <li><img src="assets\image\LdOBU1I.jpg"></li>
+        </ul>
+       
+    </div>
+   <footer>
+        <div>
             <nav>
-                 <a href=""><button id="face"></button></a>
-                 <a href=""><button id="insta"></button></a>
-                 <a href=""><button id="red"></button></a>
-        
+                <ul>
+                    <!--svg main logo-->
+                    <li class="logo"><a><img src="/assets/svg/mainLogo.svg" alt="logo"></a></li>
+                    <!--facebook-->
+                    <li><a href=""><img src="/assets/svg/facebook.svg"alt="facebook"></a></li>
+                    <!--instagram-->
+                    <li><a href=""><img src="/assets/svg/insta.svg"alt="insta"></a></li>
+                    <!--reddit-->
+                    <li><a href=""><img src="/assets/svg/reddit.svg"alt="reddit"></a></li>
+                </ul>
             </nav>
+        </div>
+        <div class="droits">
+            <p> Tous droits réservés. 2025. Alexia Chher, Olivier Laliberté, Joey Bourgeois.</p>
         </div>
     </footer>
 </body>
