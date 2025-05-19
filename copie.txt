@@ -124,3 +124,20 @@ COPY INDEX HTML 18-05 1-05PM
     </footer>
 </body>
 </html>
+
+/*.mainLogo {
+    display:flex;
+    align-items: center;
+    max-height:50px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-weight: 300;
+    font-size:2em;
+}*/
+
+#texteLogo h1 {
+    color: #fff;
+    font-weight: 300;
+    font-size:1.5em;
+}

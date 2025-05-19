@@ -102,6 +102,46 @@ h2{
     height: 5%;
 }
 
+
+ #archideckt {
+    background-color: #FF7357;
+    border-radius: 100%;
+    max-width:80px;
+    width:45px;
+    height: 45px;
+    padding:10px;
+    margin: 10px;  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#moxfield {
+    background-color:#A07BFF;
+    border-radius: 100%;
+    max-width:80px;
+    width:45px;
+    height: 45px;
+    padding:10px;
+    margin: 10px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scryfall{
+    background-color:#60516F;
+    border-radius: 100%;
+    max-width:80px;
+    width:45px;
+    height: 45px;
+    padding:10px;
+    margin: 10px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*section hero*/
 
 /*mettre texte alternatif, id change to class, evite balise button, juste mettre hover sur qu'ext-ce qui est accessible*/

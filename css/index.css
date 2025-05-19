@@ -99,6 +99,23 @@ h2 {
 .button img {
     width:2em;
     height:2em;
+
+}
+.mainLogo {
+    display:flex;
+    align-items: center;
+    max-height:50px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-weight: 300;
+    font-size:2em;
+}
+
+#texteLogo h1 {
+    color: #fff;
+    font-weight: 300;
+    font-size:1.5em;
 }
 
  #archideckt {
