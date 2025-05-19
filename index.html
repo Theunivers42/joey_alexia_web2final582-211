@@ -62,38 +62,46 @@
         <!---section commandant du jour dans version desktop, mobile = placer au centre -->
             <div class="commanders">
                 <h2>Commandant du jour</h2> <!--choisi de garder titre en mobile pour situer les utilisateurs--> 
-                <div class="carte">
-                    <img src="/assets/image/commanderCard.jpg" alt="commanderCard">
-                <div class="options">
-                    <a class="button" id="archideckt" href=""><img src="/assets/svg/archideckt.svg"alt="archideckt"></a>
-                    <a class="button"id="moxfield" href=""><img src="/assets/svg/moxfield.svg"alt="moxfield"></a>
-                    <a class="button"id="scryfall" href=""><img src="/assets/svg/scryfall.svg"alt="scryfall"></a>
-                </div>
-
-                </div> <!--fermer div carte-->  
-
-               
+                <div class="container" id="none"> <!--apparait seulement en mobile-->
+                        <div class="carte">
+                            <img src="/assets/image/commanderCard.jpg" alt="commanderCard">
+                            <div class="options">
+                                <a class="button" id="archideckt" href=""><img src="/assets/svg/archideckt.svg"alt="archideckt"></a>
+                                <a class="button"id="moxfield" href=""><img src="/assets/svg/moxfield.svg"alt="moxfield"></a>
+                                <a class="button"id="scryfall" href=""><img src="/assets/svg/scryfall.svg"alt="scryfall"></a>
+                            </div> <!--fermer div options--> 
+                    </div> <!--fermer div carte-->  
+                </div> <!--fermer div container--> 
             </div> <!--fermer div commanders-->
         </div><!--fermer div haut-->
       
        
     
         <!---initialement appele cartes populaires sur version mobile, mais changer pour en vedette cette semaine; raison; eviter la confusion-->
-            
-            <h2>En vedette cette semaine</h2>
+          
+        
+        <div class="bas">
+             <div class="enVedette"> 
+                <h2>En vedette cette semaine</h2>
                 <div class="container">
                     
            <!--commandant de la semaine--> 
                     <div class="topCommanders">
                         <h2>commanders</h2>
                         <ul>
-                            <li class="commanders"><a href="">Teval, the Balanced Scale</a></li>
-                            <li class="commanders"><a href="">The Ur-Dragon</a></li>
-                            <li class="commanders"><a href="">Deadpool, Trading Cards</a></li>
-                            <li class="commanders"><a href="">Zurgo Stormrender</a></li>
-                            <li class="commanders"><a href="">Ureni of the Unwritten</a></li>
+                            <li class="cards"><a href="">Teval, the Balanced Scale</a></li>
+                            <li class="cards"><a href="">The Ur-Dragon</a></li>
+                            <li class="cards"><a href="">Deadpool, Trading Cards</a></li>
+                            <li class="cards"><a href="">Zurgo Stormrender</a></li>
+                            <li class="cards"><a href="">Ureni of the Unwritten</a></li>
+                            <li class="cards hideOnMobile"><a href="">Felothar the Steadfast</a></li>
+                            <li class="cards hideOnMobile"><a href="">Miirym, Sentinel Wyrm</a></li>
+                            <li class="cards hideOnMobile"><a href="">Kotis, the Fangkeeper</a></li>
+                            <li class="cards hideOnMobile"><a href="">Edgar Markov</a></li>
+                            <li class="cards hideOnMobile"><a href="">Tymna the Weaver</a></li>
+
                         </ul>
-                    </div>
+                    </div> <!--fermer div topcommanders-->
                     <!--cartes populaires de la semaine-->
                     <div class="topCard">
                         <h2>cartes</h2>
@@ -102,18 +110,41 @@
                             <li class="cards"><a href="#">Mardu Siegebreaker</a></li>
                             <li class="cards"><a href="#">Temur Battlecrier</a></li>
                             <li class="cards"><a href="#">Ureni of the Unwritten</a></li>
-                            <li class="cards"><a href="#">Kheru Goldkeeper</a></li>  
+                            <li class="cards"><a href="#">Kheru Goldkeeper</a></li>
+                            <li class="cards hideOnMobile"><a href="">All-Out Assault</a></li>
+                            <li class="cards hideOnMobile"><a href="">Betor, Kin to All</a></li>
+                            <li class="cards hideOnMobile"><a href="">Bone-Cairn Butcher</a></li>
+                            <li class="cards hideOnMobile"><a href="">Colossal Grave-Reaver </a></li>
+                            <li class="cards hideOnMobile"><a href="">Windcrag Sieger</a></li>
+
                         </ul>
-                    </div>
-            </div>
-            <div class="container">
-                <img src="/assets/image/image_article.jpg">
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</p>
-            </div>
-            <div class="container">
-                <img src="/assets/image/image_article.jpg">
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</p>
-            </div>
+                    </div> <!--fermer div topCard-->
+            </div> <!--fermer div container-->
+        </div> <!--fermer div enVedette-->
+            
+
+            <div class="nouvelles">
+                <h2>articles à lire</h2>
+                <div class="container">
+                    <div class="article">
+                        <img src="/assets/image/article_01.png">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</p>
+                    </div> <!--ferme div article-->
+                </div><!--ferme div container-->
+                <div class="container">
+                    <div class="article"> 
+                        <img src="/assets/image/article_02.jpg"> <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</p> 
+                    </div> <!--ferme div article-->
+                </div> <!--ferme div container-->
+                <div class="container">
+                    <div class="article"> 
+                        <img src="/assets/image/article_03.jpg"> <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</p> 
+                    </div> <!--ferme div article-->
+                </div> <!--ferme div container-->
+            </div> <!--ferme div nouvelle-->
+        </div> <!--ferme div bas-->
+       
+            
         
     <script>
         function showSidebar(){
