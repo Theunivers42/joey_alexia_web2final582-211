@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
     <!--<link rel="stylesheet" href="css/index.css">-->
-    <link rel="stylesheet" href="css/menu.css"> <!--fais par alexia -->
+    <link rel="stylesheet" href="css/indexf.css"> <!--fais par alexia -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
@@ -53,29 +53,23 @@
 
     <main>
         <!--mot de bienvenue sur mobile seulement bienvenue qui apparait, desktop message qui s'affiche. choisi de s'attendre sur une seule couleur du texte pour le texte et titre afin d'eviter la confusion chez l'utilisateur -->
-        <div class="haut">
-            <div class="bienvenue"> 
-                <h2>Bienvenue!</h2>
-                <p class="hideOnMobile" id="texteBienvenue">Découvrez l'essence du Commander avec EDHREC — votre ressource incontournable pour créer de meilleurs decks. Que vous construisiez votre tout premier deck Commander ou que vous peaufiniez votre centième, EDHREC collecte des données de milliers de decks pour vous montrer les cartes les plus populaires, les synergies et les stratégies autour de vos commandants préférés. Plongez, inspirez-vous et améliorez votre prochain build !</p>
-            </div>
+        <div class="bienvenue"> 
+            <h2>Bienvenue!</h2>
+            <p class="hideOnMobile" id="texteBienvenue">Découvrez l'essence du Commander avec EDHREC — votre ressource incontournable pour créer de meilleurs decks. Que vous construisiez votre tout premier deck Commander ou que vous peaufiniez votre centième, EDHREC collecte des données de milliers de decks pour vous montrer les cartes les plus populaires, les synergies et les stratégies autour de vos commandants préférés. Plongez, inspirez-vous et améliorez votre prochain build !</p>
+        </div>
 
         <!---section commandant du jour dans version desktop, mobile = placer au centre -->
-            <div class="commanders">
-                <h2>Commandant du jour</h2> <!--choisi de garder titre en mobile pour situer les utilisateurs--> 
-                <div class="carte">
-                    <img src="/assets/image/commanderCard.jpg" alt="commanderCard">
-                <div class="options">
-                    <a class="button" id="archideckt" href=""><img src="/assets/svg/archideckt.svg"alt="archideckt"></a>
-                    <a class="button"id="moxfield" href=""><img src="/assets/svg/moxfield.svg"alt="moxfield"></a>
-                    <a class="button"id="scryfall" href=""><img src="/assets/svg/scryfall.svg"alt="scryfall"></a>
+        <div class="commanders">
+            <h2>Commandant du jour</h2> <!--choisi de garder titre en mobile pour situer les utilisateurs--> 
+             <div class="contenu">
+                <img src="/assets/image/commanderCard.jpg" alt="commanderCard">
+                <div class="button">
+                    <a id="archideckt" href=""><img src="/assets/svg/archideckt.svg"alt="archideckt"></a>
+                    <a id="moxfield" href=""><img src="/assets/svg/moxfield.svg"alt="moxfield"></a>
+                    <a id="scryfall" href=""><img src="/assets/svg/scryfall.svg"alt="scryfall"></a>
                 </div>
-
-                </div> <!--fermer div carte-->  
-
-               
-            </div> <!--fermer div commanders-->
-        </div><!--fermer div haut-->
-      
+            </div>   
+        </div>
        
     
         <!---initialement appele cartes populaires sur version mobile, mais changer pour en vedette cette semaine; raison; eviter la confusion-->
@@ -146,7 +140,7 @@
             </nav>
         </div>
         <div class="droits">
-            <p> Tous droits réservés. 2025. Alexia Chher, Olivier Laliberté, Joey Bourgeois.</p>
+            <p> Tous droits réservés. 2025. Olivier Laliberté et Joey Bourgeois.</p>
         </div>
     </footer>
 </body>
