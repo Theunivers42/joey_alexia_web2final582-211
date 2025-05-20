@@ -1,0 +1,162 @@
+.wrapper {
+    position: relative;
+    width: 400px;
+    height:440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    overflow: hidden;
+    transition: height 0.2s ease; 
+}
+/*change la hauteur du contenu lorsque clique sur enregistrer*/
+.wrapper.active {
+    height: 520px;
+}
+
+.wrapper .form-box{
+    width:100%;
+    padding: 40px;
+} /*ajuster taille du contenu*/
+
+.wrapper .form-box.login{
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
+} /*quand clique sur enregistrer se tasse sur le cote gauche*/
+
+.wrapper .form-box.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}/*pour mettre de cote fenetrer register*/
+
+.wrapper.active .form-box.register{
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+
+
+.form-box h2{
+    text-align:center;
+}/*centrer login*/
+
+.input-box{
+    position: relative;
+    width:100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin:30px 0px;
+}/*styliser */
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;/*duree de transition*/
+} /*deplacer les texte courriel et mot de passe*/
+
+
+/*creation animation quand utilisateur interagit avec*/
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+
+.input-box input{
+    width: 100%;
+    height:100%;
+    background: transparent;
+    border:none;
+    outline:none;
+    /*changer taille de utilisateur*/
+    font-size:1em;
+    color:#162938;
+    font-weight: 600;
+    /*----------------------*/
+    padding:0 35px 0 5px; /*pour ne pas laisser ecriture depasser le box*/
+} /*faire rendre transparent les cases de fill form*/
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size:1.2em;
+    color:#162938;
+    line-height: 57px;
+}/*faire deplacer les icons vers la droite, position absolute permet de les faire deplacer*/
+
+.remember-forgot {
+    font-size: 0.9em; /*rapetisser ecriture se souvenir de moi par rapport au reste*/
+    color:#162938;
+    font-weight: 500;
+    margin:-15px 0 15px;
+    display:flex;
+    justify-content: space-between;/*distancer se soouvenir de moi et oubliez mot de passe*/
+}
+
+.remember-forgot label input{
+    accent-color: #162938;
+    margin: 3px;
+}/*styler le checkbox changer la couleur*/
+
+/*changer style de mot de passe oublier + ajouter un hover*/
+
+.remember-forgot a{
+    color:#162938;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+/*styliser le bouton login*/
+.btn {
+    width:100%;
+    height: 45px;
+    background:#162938;
+    border: none;
+    outline:none;
+    border-radius: 6px;
+    cursor: pointer; /*changer le cursor pour pointer lorsque survol*/
+    /*changer le style typo*/
+    font-size:1em;
+    color:#fff;
+    font-weight: 500;
+}
+
+
+/*vient centrer et changer taille de pas de compte*/
+.login-register{
+    font-size: 0.9em;
+    color:#162938;
+    font-weight: 500;
+    text-align:center;
+    margin: 25px 0 10px;
+}
+
+
+/*meme style que mot de passe oublie*/
+.login-register p a {
+    color:#162938;
+    text-decoration: none;
+    font-weight:600;
+}
+
+.login-register p a:hover{
+    text-decoration: underline;
+}

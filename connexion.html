@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
     <!--<link rel="stylesheet" href="css/index.css">-->
-    <link rel="stylesheet" href="css/alexiacss.css"> <!--fais par alexia -->
+    <link rel="stylesheet" href="./css/connexion.css"> <!--fais par alexia -->
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
@@ -43,7 +43,7 @@
                 <!--bouton de pour barre de recherche, pas accesible, disponible en mobile-->
                 <li><a href="#"><img src="/assets/svg/search_blanc.svg"alt="recherche"></a></li>
                 <!--onglet contact qui mene a la page de contact, disponible en mobile-->
-                <li><a href="connection.html"><img src="/assets/svg/contact_blanc.svg"alt="contact"></a></li>
+                <li><a href="connexion.html"><img src="/assets/svg/contact_blanc.svg"alt="contact"></a></li>
                 <!--qui permet d'ouvrir le menu de nav sur le coté, disponible en mobile-->
                 <li onclick=showSidebar()><a><img src="/assets/svg/menu_blanc.svg"alt="menu"></a></li>
             </ul>
@@ -51,8 +51,66 @@
     </header>
 
     <main>
+        <div class="wrapper">
+            <div class="form-box login">
+                <h2>Se connecter</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Courriel</label>
+                    </div> <!--espace pour entrer email-->
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Mot de passe</label>
+                    </div><!--espace pour entrer password-->
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Se souvenir de moi</label>
+                        <a href="#">Mot de passe oublié?</a>
+                    </div>
+                    <button type="submit" class="btn">Se connecter</button>
+                    <div class="login-register">
+                        <p>Vous n'avez pas de compte?<a href="#" class="register-link">S'enregistrer</a></p>
+                    </div>
+
+                </form>
+            </div>
+            <!----------------------------------S<enregistrer------------------>
+
+            <div class="form-box register">
+                <h2>S'enregistrer</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Nom d'utilisateur</label>
+                    </div> <!--espace pour entrer username-->
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Courriel</label>
+                    </div> <!--espace pour entrer email-->
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Mot de passe</label>
+                    </div><!--espace pour entrer password-->
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">J'accepte les conditions d'utilisation et les termes</label>
+                    </div>
+                    <button type="submit" class="btn">S'enregister</button>
+                    <div class="login-register">
+                        <p>Vous avez déjà un compte?<a href="#" class="login-link">Se connecter</a></p>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
 
 
+     <!---script pour nav-->
     <script>
         function showSidebar(){
             const sidebar = document.querySelector('.sidebar')
@@ -64,6 +122,13 @@
             sidebar.style.display = 'none'
         }
     </script>
+
+    <script src="script.js" defer></script> <!---page script pour page se connecter-->
+
+    <!---script por icon svg-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </main>
 
     <footer>
