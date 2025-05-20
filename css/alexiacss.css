@@ -8,133 +8,6 @@
     --league: 'League Gothic', sans-serif;
 }
 
-*, *::before, *::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: 1px solid red; /*temporaire*/
-}
-
-html {
-    min-width: 100vw;
-    min-height: 100vh;
-
-}
-
-body{
-    
-    max-width:100vw;
-    min-height:100vh;
-    /*changement background color du desktop et mobile pour gradient linear dans le deux modeles*/
-    background-image: linear-gradient(var(--beige), var(--brun));
-    background-repeat: no-repeat;
-    background-position: center;
-    font-family: var(--league, sans-serif);
-    /*push le footer en bas*/
-    display:flex;
-    flex-direction: column;
-    overflow-x: hidden; /*empeche de scroll sur le x*/
-    
-}
-
-main{
-    flex-grow: 1;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left:20px;
-    margin-right:20px; /*permet de garder des marge de la page web*/
-}
-
-nav{
-    background-color: var(--vertFonce);
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    height: 100%;
-}
-
-/*barre nav en haut*/
-nav ul{
-    width: 100%;
-    list-style-type:none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-   
-}
-
-nav li {
-    height:50px;
-}
-
-nav a{
-    height: 100%;
-    padding :0 15px;
-    margin: 0 5px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color:#ffffff;
-    text-transform: uppercase;
-    font-size:1.3rem;
-}
-
-nav a:hover{
-    background-color: var(--vertPale);
-    color:var(--vertFonce);
-}
-
-nav li:first-child{
-    margin-right: auto;
-}
-
-/*barre nav deroulant*/
-.sidebar{
-    position: fixed;
-    top:0;
-    right:0;
-    height: 100vh;
-    width: 500px;
-    z-index:999;
-    background-color: rgba(2, 88, 21, 0.2);
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1) ;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.sidebar li{
-    width:100%;
-}
-
-.sidebar a{
-    width: 100%;
-}
-
-/*------------------navigation et body------------------------------------*/
-
-/*titres de la page en vert*/
-h2 {
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    color:var(--vertFonce);
-    margin:10px;
- }
-
-
-.logo {
-    color:#ffffff;
-    font-size: 3rem;
-    text-transform: uppercase;
-    display:flex;
-    align-items: center;
-    max-height:50px;
-    width: 100%;
-    height: 100%;
-    font-weight: 300;
-}
- /*---------------------------------------------------------------*/
 
 /*------------------------haut de la page en mobile--------------*/
 #texteBienvenue{
@@ -162,6 +35,21 @@ h2 {
         display:flex;
         flex-direction: column;
     }
+
+    .topCommanders h2 {
+        color:#fff;
+        letter-spacing: 0.1em;
+        
+    }
+
+    
+    .topCard h2 {
+        color:#fff;
+        letter-spacing: 0.1em;
+        
+    }
+
+
 } 
 
 
@@ -178,7 +66,6 @@ h2 {
     width: 100%;
     display:flex;
     justify-content: center;
-    flex-grow: 2;
 }
 
 .options {
@@ -205,7 +92,7 @@ h2 {
 }
 
 #archideckt {
-    background-color: #FF7357;
+    background-color:#FF7357;
 }
 
 #moxfield {
@@ -236,6 +123,7 @@ h2 {
 
 .topCommanders{
     margin: 20px;
+
 }
 
 .topCard{
@@ -247,14 +135,17 @@ h2 {
  .cards a{
     text-transform: capitalize;
     color: #fff;
-    font-size: 1.8rem;
+    font-size: clamp(0.5rem, 1.8rem, 1.8rem);
     margin:10px;
     text-decoration: none;
+    display:flex;
+    justify-content:flex-start;
+    
  }
 
  @media(min-width: 800px){
 
- main {
+    main {
     margin-left: 20px;
  }
 
@@ -292,11 +183,28 @@ h2 {
         width: 50%;
     }
 
+    .article p {
+        color:var(--vertPale);
+        text-align: justify;
+        font-family: "League Gothic";
+        font-size: clamp(0.5rem, 1.5rem, 1.5rem);
+        font-style: normal; 
+        text-transform: none;
 
- }
+
+ } 
+}
 
 
 /*------------------nouvelles--------------------------------------*/
+
+.container.article{
+    background-color: var(--vertPale);
+}
+
+h3{
+    font-size: clamp(0.5rem, 1.8rem, 1.8rem);
+}
 
 .article img {
     max-width: 600px;
@@ -307,6 +215,15 @@ h2 {
 
 }
 
+
+.article p {
+ color:var(--vertFonce);
+ text-align: justify;
+ font-family: "League Gothic";
+ font-size: clamp(0.5rem, 1.5rem, 1.5rem);
+ font-style: normal; 
+ text-transform: none;
+}
 /*--------------------------------------------------------------------*/
 footer {
     background-color: var(--vertFonce);

@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
     <!--<link rel="stylesheet" href="css/index.css">-->
-    <link rel="stylesheet" href="css/menu.css"> <!--fais par alexia -->
+    <link rel="stylesheet" href="css/alexiacss.css"> <!--fais par alexia -->
+    <link rel="stylesheet" href="./css/nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
@@ -21,7 +22,7 @@
                 <!--x qui permet de fermer la navigation de cote lorsqu'on clique dessus (javascript inclus dans html voir plus bas)-->
                 <li onclick=hideSidebar()><a><img src="/assets/svg/close_blanc.svg"alt="fermer"></a></li>
                 <!--onglet cartes sidebar-->
-                <li><a href="">cartes</a></li>
+                <li><a href="cartes.html">cartes</a></li>
                 <!--onglet commandant sidebar-->
                 <li><a href="commandant.html">commandant</a></li>
                 <!--onglet nouvelle sidebar-->
@@ -34,7 +35,7 @@
                 <!--<li class="mainLogo"><a href=""><img src="/assets/svg/mainLogo.svg" alt="logo"><h1>EDHERC</h1></a></li>-->
                 <li><a href="index.html" class="logo"><img src="/assets/svg/mainLogo.svg" alt="logo">EDHERC</a></li>
                 <!--onglet carte nav en haut-->
-                <li class="hideOnMobile"><a href="">cartes</a></li>
+                <li class="hideOnMobile"><a href="cartes.html">cartes</a></li>
                 <!--onglet commandant nav en haut-->
                 <li class="hideOnMobile"><a href="commandant.html">commandant</a></li>
                 <!--onglet nouvelles nav en haut-->
@@ -66,9 +67,9 @@
                         <div class="carte">
                             <img src="/assets/image/commanderCard.jpg" alt="commanderCard">
                             <div class="options">
-                                <a class="button" id="archideckt" href=""><img src="/assets/svg/archideckt.svg"alt="archideckt"></a>
-                                <a class="button"id="moxfield" href=""><img src="/assets/svg/moxfield.svg"alt="moxfield"></a>
-                                <a class="button"id="scryfall" href=""><img src="/assets/svg/scryfall.svg"alt="scryfall"></a>
+                                <a class="button" id="archideckt" href="#"><img src="/assets/svg/archideckt.svg"alt="archideckt"></a>
+                                <a class="button"id="moxfield" href="#"><img src="/assets/svg/moxfield.svg"alt="moxfield"></a>
+                                <a class="button"id="scryfall" href="#"><img src="/assets/svg/scryfall.svg"alt="scryfall"></a>
                             </div> <!--fermer div options--> 
                     </div> <!--fermer div carte-->  
                 </div> <!--fermer div container--> 
@@ -89,16 +90,16 @@
                     <div class="topCommanders">
                         <h2>commanders</h2>
                         <ul>
-                            <li class="cards"><a href="">Teval, the Balanced Scale</a></li>
-                            <li class="cards"><a href="">The Ur-Dragon</a></li>
-                            <li class="cards"><a href="">Deadpool, Trading Cards</a></li>
-                            <li class="cards"><a href="">Zurgo Stormrender</a></li>
-                            <li class="cards"><a href="">Ureni of the Unwritten</a></li>
-                            <li class="cards hideOnMobile"><a href="">Felothar the Steadfast</a></li>
-                            <li class="cards hideOnMobile"><a href="">Miirym, Sentinel Wyrm</a></li>
-                            <li class="cards hideOnMobile"><a href="">Kotis, the Fangkeeper</a></li>
-                            <li class="cards hideOnMobile"><a href="">Edgar Markov</a></li>
-                            <li class="cards hideOnMobile"><a href="">Tymna the Weaver</a></li>
+                            <li class="cards"><a href="#">Teval, the Balanced Scale</a></li>
+                            <li class="cards"><a href="#">The Ur-Dragon</a></li>
+                            <li class="cards"><a href="#">Deadpool, Trading Cards</a></li>
+                            <li class="cards"><a href="#">Zurgo Stormrender</a></li>
+                            <li class="cards"><a href="#">Ureni of the Unwritten</a></li>
+                            <li class="cards hideOnMobile"><a href="#">Felothar the Steadfast</a></li>
+                            <li class="cards hideOnMobile"><a href="#">Miirym, Sentinel Wyrm</a></li>
+                            <li class="cards hideOnMobile"><a href="#">Kotis, the Fangkeeper</a></li>
+                            <li class="cards hideOnMobile"><a href="#">Edgar Markov</a></li>
+                            <li class="cards hideOnMobile"><a href="#">Tymna the Weaver</a></li>
 
                         </ul>
                     </div> <!--fermer div topcommanders-->
@@ -111,11 +112,11 @@
                             <li class="cards"><a href="#">Temur Battlecrier</a></li>
                             <li class="cards"><a href="#">Ureni of the Unwritten</a></li>
                             <li class="cards"><a href="#">Kheru Goldkeeper</a></li>
-                            <li class="cards hideOnMobile"><a href="">All-Out Assault</a></li>
-                            <li class="cards hideOnMobile"><a href="">Betor, Kin to All</a></li>
-                            <li class="cards hideOnMobile"><a href="">Bone-Cairn Butcher</a></li>
-                            <li class="cards hideOnMobile"><a href="">Colossal Grave-Reaver </a></li>
-                            <li class="cards hideOnMobile"><a href="">Windcrag Sieger</a></li>
+                            <li class="cards hideOnMobile"><a href="#">All-Out Assault</a></li>
+                            <li class="cards hideOnMobile"><a href="#">Betor, Kin to All</a></li>
+                            <li class="cards hideOnMobile"><a href="#">Bone-Cairn Butcher</a></li>
+                            <li class="cards hideOnMobile"><a href="#">Colossal Grave-Reaver </a></li>
+                            <li class="cards hideOnMobile"><a href="#">Windcrag Sieger</a></li>
 
                         </ul>
                     </div> <!--fermer div topCard-->
@@ -125,20 +126,24 @@
 
             <div class="nouvelles">
                 <h2>articles à lire</h2>
-                <div class="container">
+                <div class="container article">
                     <div class="article">
                         <img src="/assets/image/article_01.png">
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</p>
+                        <h3>Beyond the multiverse - le 14e docteur</h3>
+                        <p>Vous souhaitez combiner Tempête de Dragons avec votre deck Dragon ? Bien sûr que oui. Découvrez notre liste des 10 meilleures façons d'y parvenir.</p>
                     </div> <!--ferme div article-->
                 </div><!--ferme div container-->
-                <div class="container">
+                <div class="container article">
                     <div class="article"> 
-                        <img src="/assets/image/article_02.jpg"> <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</p> 
+                        <img src="/assets/image/article_02.jpg"> 
+                        <h3>Beyond the multiverse - le 14e docteur</h3>
+                        <p>Allons-y ! Préparez-vous pour un peu de wibbly wobbly, timey wimey Magic: The Gathering!</p> 
                     </div> <!--ferme div article-->
                 </div> <!--ferme div container-->
-                <div class="container">
+                <div class="container article">
                     <div class="article"> 
-                        <img src="/assets/image/article_03.jpg"> <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</p> 
+                        <img src="/assets/image/article_03.jpg"> <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</p> 
                     </div> <!--ferme div article-->
                 </div> <!--ferme div container-->
             </div> <!--ferme div nouvelle-->
@@ -168,11 +173,11 @@
                     <!--svg main logo-->
                     <li class="logo"><a><img src="/assets/svg/mainLogo.svg" alt="logo"></a></li>
                     <!--facebook-->
-                    <li><a href=""><img src="/assets/svg/facebook.svg"alt="facebook"></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="/assets/svg/facebook.svg"alt="facebook"></a></li>
                     <!--instagram-->
-                    <li><a href=""><img src="/assets/svg/insta.svg"alt="insta"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="/assets/svg/insta.svg"alt="insta"></a></li>
                     <!--reddit-->
-                    <li><a href=""><img src="/assets/svg/reddit.svg"alt="reddit"></a></li>
+                    <li><a href="https://www.reddit.com/" target="_blank" rel="noopener noreferrer"><img src="/assets/svg/reddit.svg"alt="reddit"></a></li>
                 </ul>
             </nav>
         </div>

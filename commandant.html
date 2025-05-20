@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <meta name="robots" content="noindex, nofollow">
     <title>EDHERC</title>
     <link rel="stylesheet" href="./css/joeycss.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/nav.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -19,7 +18,7 @@
                 <!--x qui permet de fermer la navigation de cote lorsqu'on clique dessus (javascript inclus dans html voir plus bas)-->
                 <li onclick=hideSidebar()><a><img src="/assets/svg/close_blanc.svg"alt="fermer"></a></li>
                 <!--onglet cartes sidebar-->
-                <li><a href="">cartes</a></li>
+                <li><a href="cartes.html">cartes</a></li>
                 <!--onglet commandant sidebar-->
                 <li><a href="commandant.html">commandant</a></li>
                 <!--onglet nouvelle sidebar-->
@@ -32,7 +31,7 @@
                 <!--<li class="mainLogo"><a href=""><img src="/assets/svg/mainLogo.svg" alt="logo"><h1>EDHERC</h1></a></li>-->
                 <li><a href="index.html" class="logo"><img src="/assets/svg/mainLogo.svg" alt="logo">EDHERC</a></li>
                 <!--onglet carte nav en haut-->
-                <li class="hideOnMobile"><a href="">cartes</a></li>
+                <li class="hideOnMobile"><a href="cartes.html">cartes</a></li>
                 <!--onglet commandant nav en haut-->
                 <li class="hideOnMobile"><a href="commandant.html">commandant</a></li>
                 <!--onglet nouvelles nav en haut-->
@@ -47,19 +46,7 @@
         </nav>
     </header>
     <main>
-         <script>
-        function showSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
-        }
-
-         function hideSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none'
-        }
-    </script>
-    </main>
-    <div class="centre">
+            <div class="centre">
         <div class="carte">
             <img src="assets\image\commanderCard.jpg" class="carte commandant mobile">
            
@@ -179,19 +166,33 @@
            <li><img src="assets\image\LdOBU1I.jpg"></li>
         </ul>
        
-    </div>
+    </div> 
+    
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+         function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    </main>
+
    <footer>
         <div>
             <nav>
-                <ul>
+               <ul>
                     <!--svg main logo-->
                     <li class="logo"><a><img src="/assets/svg/mainLogo.svg" alt="logo"></a></li>
                     <!--facebook-->
-                    <li><a href=""><img src="/assets/svg/facebook.svg"alt="facebook"></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="/assets/svg/facebook.svg"alt="facebook"></a></li>
                     <!--instagram-->
-                    <li><a href=""><img src="/assets/svg/insta.svg"alt="insta"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="/assets/svg/insta.svg"alt="insta"></a></li>
                     <!--reddit-->
-                    <li><a href=""><img src="/assets/svg/reddit.svg"alt="reddit"></a></li>
+                    <li><a href="https://www.reddit.com/" target="_blank" rel="noopener noreferrer"><img src="/assets/svg/reddit.svg"alt="reddit"></a></li>
                 </ul>
             </nav>
         </div>
