@@ -104,26 +104,9 @@
 
 /*-----------------------fin de style pour partie haut de la page----------------------------------------*/
 
-
-
-@media (min-width:800px){
-    .enVedette {
-    display:flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-    .commanders{
-    margin-right: 10px;
-    display:flex;
-    flex-direction:column;
-    align-items: flex-end;
-    }
-
-
-}
+/*--------------------------style bas de page-----------------*/
 
 /*style les boites contenant cartes populaires et nouvelles*/
-
 
 .container {
     background-color: var(--vert);
@@ -159,9 +142,10 @@
     text-decoration: none;
     display:flex;
     justify-content:flex-start;
-    
  }
- /*quand media desktop*/
+
+
+ /*----------------version desktop----------------------------*/
  @media(min-width: 800px){
 
     main {
@@ -172,6 +156,18 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .enVedette {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    }
+    .commanders{
+    margin-right: 10px;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-end;
     }
 
     .container{
@@ -212,15 +208,7 @@
  } 
 }
 
-/*version mobile*/
-@media(max-width: 400px){
-.container{
-        width:100%; /*pour etre cit a son contenu*/
-    }
-
-}
-
-/*------------------nouvelles--------------------------------------*/
+/*------------------section nouvelles--------------------------------------*/
 
 .container.article{
     background-color: var(--vert);
@@ -247,7 +235,7 @@ h3{
  font-style: normal; 
  text-transform: none;
 }
-/*--------------------------------------------------------------------*/
+/*----------------------------style de footer----------------------------------------*/
 footer {
     background-color: var(--vertFonce);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -280,5 +268,9 @@ footer {
     .sidebar{
         width:100%;
         box-sizing: border-box;
+    }
+
+    .container{
+        width:100%; /*pour etre fit a son contenu*/
     }
 }
